@@ -12,10 +12,11 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 /// @title ShakeToken
 /// @author ShakeShock
 /// @notice Shake ERC20 token used as the in-game currency on chain for ShakeShock
-/// inherits from: 
+/// inherits from:
 ///     ERC20Burnable:  to support burning of tokens in order to add a deflationary mechanism to the currency
 ///     AccessControl:  to introduce roles for privileged actions - a role can have many authorised accounts
 ///     ERC20Permit:    token holders permit third parties to transfer tokens on their behalf without paying gas (useful for game mechanisms)
+///     Pausable:       permitted accounts can pause the contract for security
 
 contract ShakeToken is ERC20, ERC20Burnable, Pausable, AccessControl, ERC20Permit {
 
