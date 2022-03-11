@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ShakeShock/shake-erc20-token/issues"
   },
-  "homepage": "https://github.com/ShakeShock/shake-erc20-token#readme"
+  "homepage": "https://github.com/ShakeShock/shake-erc20-token#readme",
+  "devDependencies": {
+    "hardhat": "^2.9.1"
+  }
 }
