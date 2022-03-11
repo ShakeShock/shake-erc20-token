@@ -1,0 +1,1 @@
+# shake-erc20-token
